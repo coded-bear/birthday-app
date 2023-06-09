@@ -11,7 +11,7 @@ export default function App() {
   }, [index]);
 
   return (
-    <div className="flex flex-col justify-center items-center w-full max-w-5xl min-h-screen m-auto p-7">
+    <div className="flex flex-col justify-center sm:items-center w-full max-w-5xl min-h-screen m-auto p-7">
       <Heading>{config[index].heading}</Heading>
 
       <div className="flex flex-wrap gap-5">
