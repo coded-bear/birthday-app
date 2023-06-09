@@ -4,6 +4,33 @@ export const config = [
     options: ['Świetnie 😍', 'Mogło być lepiej 🤔'],
   },
   {
+    heading: 'Jak Ci idzie pisanie kodu w pracy?',
+    options: ['Daję radę 😎', 'Jest ciężko 😕'],
+  },
+  {
+    heading:
+      'Zyczymy Ci aby Twój kod był zawsze czysty, a skrypty odpalały się zawsze za pierwszym razem.',
+    options: ['Dziękuję bardzo 😃'],
+  },
+  {
+    heading: 'A jak tam Twoje dodatkowe projekty?',
+    options: ['Super 🤑', 'Jest okej 😉'],
+  },
+  {
+    heading:
+      'Jesteśmy pewni, że będzie ich coraz więcej. Życzymy aby wszystkie kończyły się sukcesem 🤑',
+    options: ['Dziękuję bardzo 😃'],
+  },
+  {
+    heading: 'Kiedy wybierasz się znów do Islandii?',
+    options: ['Jeszcze w tym roku 😃', 'Może trochę później'],
+  },
+  {
+    heading:
+      'Zyczymy Ci abyś poznał te jeszcze nieznane przez Ciebie zakamarki wyspy oraz bezpiecznych podróży samochodem po islandzkich drogach!',
+    options: ['Dziękuję bardzo 😃'],
+  },
+  {
     heading: 'Smakował Ci tort?',
     options: ['Idealny. Bez owoców 🍓', 'Jeszcze nie próbowałem'],
   },
