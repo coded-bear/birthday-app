@@ -1,30 +1,24 @@
-import { useState } from 'react';
-
-const config = [
-  { heading: 'Lorem ipsum 1', options: ['Tak', 'Nie'] },
-  { heading: 'Lorem ipsum 2', options: ['Tak', 'Nie'] },
-];
+import { useCallback, useState } from 'react';
+import Heading from './components/Heading';
+import Button from './components/Button';
+import { config } from './config';
 
 export default function App() {
-  const [slide, setSlide] = useState(0);
+  const [index, setIndex] = useState(0);
 
-  const setOption = () => {
-    setSlide(slide + 1);
-  };
+  const setOption = useCallback(() => {
+    setIndex(index + 1);
+  }, [index]);
 
   return (
-    <div className="flex flex-col justify-center items-center w-full min-h-screen p-5">
-      <h2 className="text-3xl mb-12 text-center">{config[slide].heading}</h2>
+    <div className="flex flex-col justify-center items-center w-full max-w-5xl min-h-screen m-auto p-7">
+      <Heading>{config[index].heading}</Heading>
 
       <div className="flex flex-wrap gap-5">
-        {config[slide].options.map((option, i) => (
-          <button
-            key={i}
-            onClick={setOption}
-            className="px-4 py-2 rounded-md bg-green-500 text-base"
-          >
+        {config[index].options.map((option, i) => (
+          <Button key={i} onClick={setOption} secondary={i !== 0}>
             {option}
-          </button>
+          </Button>
         ))}
       </div>
     </div>
