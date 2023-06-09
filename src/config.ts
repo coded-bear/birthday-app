@@ -40,5 +40,6 @@ export const config = [
     options: ['Uwielbiam to miasto 😍', 'To nasza wspólna decyzja 😏'],
   },
   { heading: "Kiedy Xeno's Tale?", options: ['Może kiedyś 😄', 'Raczej się nie uda 😢'] },
+  { heading: 'Jak chcesz na pamiątkę to zrób sobie forka 🍴', options: ['Przyda się 😄'] },
   { heading: 'Wszyscy Cię kochamy ❤️. Dobrej zabawy 🥳', options: [] },
 ];
