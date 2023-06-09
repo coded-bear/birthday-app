@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    background: url('/public/pattern.svg') repeat;
+    background-color: #222;
+    color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+  }
+}
